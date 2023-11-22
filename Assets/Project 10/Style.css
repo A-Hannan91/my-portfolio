@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --green900: #004d40;
+  --green700: #00796b;
+  --green500: #009688;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--green700);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: inset 1px 1px 20px 5px var(--green900);
+  border-bottom: 2px solid var(--green900);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 5px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.3s ease-in-out;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.main-sec {
+  background-image: url(./Images/Makkah.jpg);
+  height: 100vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+.main-sec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main-sec h1 {
+  font-size: 96px;
+}
+.main-sec h3 {
+  font-size: 32px;
+}
+
+.naat-sec {
+  padding-top: 50px;
+  background: var(--green700);
+}
+.naat-sec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.book-img {
+  position: relative;
+  margin-top: -350px;
+  top: 370px;
+}
+.book-img img {
+  max-height: 600px;
+  max-width: -100px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+button:hover {
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+.primary-btn {
+  background-color: var(--red600);
+  color: white;
+}
+.secondary-btn {
+  background-color: var(--green900);
+  color: white;
+  box-shadow: inset 1px 1px 20px var(--green500);
+}
+
+.about-books {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  scroll-margin: 50px;
+}
+
+.bayan-sec {
+  background-image: url(./Images/Madinah.jpg);
+  min-height: 800px;
+  padding-top: 300px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+}
+
+.bayan-sec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+
+.main-sec,
+.bayan-sec {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gift-sec {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  gap: 50px;
+  scroll-margin: 100px;
+}
+.gift-card img {
+  max-height: 300px;
+  max-width: -400px;
+}
+
+.gift-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-up {
+  background-color: var(--green500);
+  padding: 20px;
+}
+footer .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.footer-up h4 {
+  padding: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footer-low {
+  background-color: var(--green500);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 780px) {
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+  }
+  .main-sec {
+    min-height: 50vh;
+  }
+  .main-sec h1 {
+    font-size: 60px;
+  }
+  .main-sec h3 {
+    font-size: 23px;
+  }
+  .main-sec p {
+    padding: 0 10px;
+  }
+  .naat-sec {
+    padding: 50px 10px;
+  }
+  .naat-sec h4 {
+    text-align: center;
+    font-size: 15px;
+  }
+  .book-img img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-books p {
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 15px;
+  }
+  .mac-img img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .vid-sec {
+    min-height: 50hv;
+  }
+  .vid-sec p {
+    padding: 0 10px;
+  }
+  .gift-sec {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+  }
+  .gift-card {
+    display: grid;
+    place-items: center;
+  }
+  .gift-card img {
+    max-height: 70%;
+    max-width: 80%;
+    margin: 10px auto;
+  }
+  .gift-content {
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .footer-up h4 {
+    font-size: 60%;
+  }
+
+  .footer-up li {
+    font-size: 60%;
+  }
+}
