@@ -184,6 +184,11 @@ ul {
   padding: 2rem;
 }
 
+.card video {
+  max-width: 320px;
+  padding: 2rem;
+}
+
 .card-content {
   padding: 2rem;
   position: relative;
@@ -193,6 +198,18 @@ ul {
   transform: translateY(100px);
 }
 .card-content h3 {
+  text-align: center;
+}
+
+.vid-content {
+  padding: 2rem;
+  /* position: relative; */
+  /* top: -6.5rem; */
+  margin-bottom: 1rem;
+  /* transition: 0.5s ease-in-out; */
+  /* transform: translateY(100px); */
+}
+.vid-content h3 {
   text-align: center;
 }
 
