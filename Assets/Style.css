@@ -200,6 +200,10 @@ ul {
 .card-content h3 {
   text-align: center;
 }
+.card-content h3:hover {
+  color: darkred;
+  transition: 0.3s;
+}
 
 .vid-content {
   padding: 2rem;
